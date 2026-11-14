@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <RootNamespace>TabMan.Core</RootNamespace>
+    <AssemblyName>TabMan.Core</AssemblyName>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <Description>Window-switcher logic that does not depend on Windows UI.</Description>
+  </PropertyGroup>
+</Project>

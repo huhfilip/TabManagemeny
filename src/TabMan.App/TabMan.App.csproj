@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows10.0.19041.0</TargetFramework>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <UseWPF>true</UseWPF>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>TabMan.App</RootNamespace>
+    <AssemblyName>TabMan</AssemblyName>
+    <Version>1.0.0</Version>
+    <Product>TabMan</Product>
+    <Company>TabMan</Company>
+    <Description>Lightweight Windows window switcher.</Description>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Assets\tabman.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TabMan.Core\TabMan.Core.csproj" />
+    <ProjectReference Include="..\TabMan.Platform.Windows\TabMan.Platform.Windows.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\tabman.ico" CopyToOutputDirectory="PreserveNewest" Link="tabman.ico" />
+  </ItemGroup>
+</Project>

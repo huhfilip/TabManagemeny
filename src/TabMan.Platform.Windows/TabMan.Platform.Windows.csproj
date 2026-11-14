@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows10.0.19041.0</TargetFramework>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <RootNamespace>TabMan.Platform.Windows</RootNamespace>
+    <AssemblyName>TabMan.Platform.Windows</AssemblyName>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <NoWarn>$(NoWarn);SYSLIB1054;CA2101</NoWarn>
+    <Description>Win32 window discovery, activation, hotkeys, and thumbnails.</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TabMan.Core\TabMan.Core.csproj" />
+  </ItemGroup>
+</Project>
