@@ -1,0 +1,18 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Color x:Key="AppBackgroundColor">#F2F6F7FB</Color>
+  <Color x:Key="AppSurfaceColor">#FFFFFFFF</Color>
+  <Color x:Key="AppCardColor">#FFF3F5F8</Color>
+  <Color x:Key="AppStrokeColor">#FFD5DAE3</Color>
+  <Color x:Key="AppTextColor">#FF1C1E24</Color>
+  <Color x:Key="AppMutedColor">#FF5E6573</Color>
+  <Color x:Key="AppAccentColor">#FF2F6FED</Color>
+  <SolidColorBrush x:Key="AppBackground" Color="{StaticResource AppBackgroundColor}" />
+  <SolidColorBrush x:Key="AppSurface" Color="{StaticResource AppSurfaceColor}" />
+  <SolidColorBrush x:Key="AppCard" Color="{StaticResource AppCardColor}" />
+  <SolidColorBrush x:Key="AppStroke" Color="{StaticResource AppStrokeColor}" />
+  <SolidColorBrush x:Key="AppText" Color="{StaticResource AppTextColor}" />
+  <SolidColorBrush x:Key="AppMuted" Color="{StaticResource AppMutedColor}" />
+  <SolidColorBrush x:Key="AppAccent" Color="{StaticResource AppAccentColor}" />
+  <SolidColorBrush x:Key="AppSelected" Color="#FFE4EDFF" />
+</ResourceDictionary>

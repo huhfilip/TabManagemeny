@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/TabMan.App/TabMan.App.csproj" />
+    <Project Path="src/TabMan.Core/TabMan.Core.csproj" />
+    <Project Path="src/TabMan.Platform.Windows/TabMan.Platform.Windows.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/TabMan.Core.Tests/TabMan.Core.Tests.csproj" />
+  </Folder>
+</Solution>

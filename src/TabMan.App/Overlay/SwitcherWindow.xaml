@@ -1,0 +1,47 @@
+<Window x:Class="TabMan.App.Overlay.SwitcherWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="TabMan"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        ShowInTaskbar="False"
+        Topmost="True"
+        ShowActivated="True"
+        Background="{DynamicResource AppBackground}"
+        PreviewKeyDown="Window_PreviewKeyDown">
+  <DockPanel>
+    <Grid DockPanel.Dock="Top" Margin="18,16,18,8">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto" />
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="Auto" />
+      </Grid.ColumnDefinitions>
+      <StackPanel>
+        <TextBlock Text="TabMan" FontSize="18" FontWeight="SemiBold" />
+        <TextBlock Text="Switch windows" Foreground="{DynamicResource AppMuted}" FontSize="12" />
+      </StackPanel>
+      <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Button x:Name="ApplicationButton" Content="Application" Click="ApplicationMode_Click" />
+        <Button x:Name="ProjectButton" Content="Project" Click="ProjectMode_Click" />
+        <Button x:Name="RecentButton" Content="Recent" Click="RecentMode_Click" />
+        <ComboBox x:Name="ProjectScopeBox" Width="180" Margin="8,0,0,0" SelectionChanged="ProjectScope_Changed" />
+      </StackPanel>
+      <StackPanel Grid.Column="2" Orientation="Horizontal">
+        <Button Content="Settings" Click="Settings_Click" />
+        <Button Content="Close" Margin="0" Click="Close_Click" />
+      </StackPanel>
+    </Grid>
+    <DockPanel DockPanel.Dock="Top" Margin="18,0,18,8">
+      <TextBlock DockPanel.Dock="Left" VerticalAlignment="Center" Margin="0,0,8,0" Foreground="{DynamicResource AppMuted}" Text="Filter" />
+      <TextBox x:Name="FilterBox" ToolTip="Filter by window title, application, or project" TextChanged="FilterBox_TextChanged" />
+    </DockPanel>
+    <TextBlock DockPanel.Dock="Bottom"
+               Margin="18,8,18,14"
+               Foreground="{DynamicResource AppMuted}"
+               FontSize="12"
+               Text="Arrows move   Tab cycles   Enter opens   Esc closes   Ctrl+1 Application   Ctrl+2 Project   Ctrl+3 Recent   Shift+F10 menu" />
+    <ScrollViewer x:Name="Scroller" Margin="10,0,10,0" VerticalScrollBarVisibility="Auto" ScrollChanged="Scroller_ScrollChanged">
+      <StackPanel x:Name="RowsHost" />
+    </ScrollViewer>
+  </DockPanel>
+</Window>
