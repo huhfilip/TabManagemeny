@@ -15,12 +15,14 @@ TabMan does not close windows, edit documents, or read the contents of files. It
 
 ## Run it
 
-You need 64-bit Windows 10 or Windows 11.
+You need 64-bit Windows 10 or Windows 11. Running TabMan does not require the .NET SDK or any other runtime. The download already contains everything the program needs.
 
-1. Build the portable folder (see below) or copy a `win-x64` folder someone already built.
-2. Open that folder and double-click `TabMan.exe`.
-3. A TabMan icon appears in the notification area (the system tray). You may need to expand the hidden icons arrow.
-4. Press **Ctrl+Alt+Space**, or left-click the tray icon.
+1. Download [TabMan-win-x64.zip](https://github.com/huhfilip/TabManagemeny/releases/download/v1.0.0-preview.1/TabMan-win-x64.zip) from the [v1.0.0-preview.1 release](https://github.com/huhfilip/TabManagemeny/releases/tag/v1.0.0-preview.1).
+2. Unzip it. Keep `TabMan.exe` in the same folder as the other files that come out of the zip.
+3. Double-click `TabMan.exe`.
+4. Press **Ctrl+Alt+Space**. You can also left-click the TabMan icon in the notification area. Expand the hidden-icons arrow if you do not see it.
+
+This preview was packaged for Windows and has not been clicked through on a Windows PC yet. If Windows SmartScreen warns you, choose More info, then Run anyway. The file is not code-signed.
 
 The switcher is an overlay, not a full-screen program. **Enter** or a click opens the selected window. **Esc** closes the overlay and leaves you where you were. Press the shortcut again to close it without switching.
 
@@ -73,6 +75,8 @@ Two separate switches:
 The Alt+Tab option uses a keyboard hook inside TabMan. It does not install a driver, does not edit system files, and does not inject code into other programs. When you clear the checkbox or exit TabMan, the hook is removed. If Windows will not allow the hook, normal Alt+Tab keeps working and TabMan leaves it alone. Treat this option as best-effort. The custom shortcut is the reliable way to open TabMan.
 
 ## Build from source
+
+You only need this section if you want to compile TabMan yourself. Running the release zip above does not need the SDK.
 
 Install the .NET 10 SDK on Windows. In this folder:
 
